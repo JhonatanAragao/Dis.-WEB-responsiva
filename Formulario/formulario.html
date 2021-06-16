@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de clientes</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo"> 
+
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="emai" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div>
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>QuaL atendimento deseja obter da barbearia Alpha?</strong></label>
+            <label><input type="radio" name="atendimento" value="barba" checked>Barba</label>
+            <label><input type="radio" name="atendimento" value="bigode">Bigode</label>
+            <label><input type="radio" name="atendimento" value="cabelo">Cabelo</label>
+            <label><input type="radio" name="atendimento" value="completo">Barba, Cabelo e Bigode</label>
+        </div>
+        <div class="campo">
+            <label><strong>Turno de preferência para o atendimento</strong></label>
+            <select>
+                <option selected disabled value=" ">Selecione</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </div>
+        <div>
+            <br>
+            <fieldset class="grupo">
+                <div>
+                    <label><strong>Selecione os detalhes adicionais para o seu atendimento</strong></label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="adicional1" value="Corte">
+                    <label>Corte</label>
+                    <input type="checkbox" name="adicional2" value="Tingimento">
+                    <label>Tingimento</label>
+                    <input type="checkbox" name="adicional3" value="Manicure">
+                    <label>Manicure</label>
+                    <input type="checkbox" name="adicional4" value="Podologia">
+                    <label>Podologia</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="campo">
+            <br>
+            <label><strong>Deseja destacar alguma informação adicional para o seu atendimento?</strong></label>
+            <br>
+            <textarea rows="6" name="destaque"></textarea>
+            <button type="submit" class="botao">Concluído</button>
+        </div>
+    </form>
+    
+</body>
+
+</html>
