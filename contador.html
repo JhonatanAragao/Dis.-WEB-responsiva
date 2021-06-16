@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador númerico</title>
+</head>
+
+<body>
+    <h1>Contador numérico</h1>
+    <p>valor inicial:<normal id="mostra1"></normal> </p>
+    <p>Valor atual:<normal id="mostra2"></normal></p>
+
+    <label for="número"><strong>Número:</strong></label>
+    <input type="number" name="número" id="numero" required>
+    <p>Usando o operador:<normal id="atual"></normal></p>
+    <hr> 
+
+    <script>
+        var w = 0 
+        document.getElementById("mostra1").innerHTML  = w 
+
+        function adicionar () {document.getElementById("mostra2").innerHTML = w = w + document.getElementById("numero")innerHTML}
+       document.getElementById("atual").innerHTML = document.getElementById("numero").innerHTML
+    </script>
+    <button onclick="adicionar()">Adicionar</button>
+    
+</body>
+</html>
