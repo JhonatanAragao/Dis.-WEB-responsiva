@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Atividade: Fazendo operações com o JS</h1>
+    <p>O número digitado foi: <normal id="numero"></normal> </p>
+    <p>A soma deste número a ele mesmo é igual a: <normal id="soma"></normal></p>
+    <p>A multiplicação deste novo valor por 4 é igual a <normal id="multiplicar"></normal></p>
+    <p>A divisão deste resultado por 8 é igual a <normal id="dividir"></normal></p>
+    
+    <script>
+       
+    var numero = Number( window.prompt ('Digite um número: '))
+    document.getElementById("numero").innerHTML = numero 
+    document.getElementById("soma").innerHTML = numero + numero
+    document.getElementById("multiplicar").innerHTML = document.getElementById("soma").innerHTML * 4
+    document.getElementById("dividir").innerHTML = document.getElementById("multiplicar").innerHTML / 8
+
+    //FAZENDO O USO DE VÁRIAS VARIÁVEIS:
+     //var numero = Number( window.prompt ('Qual o número será trabalhado?'))
+        //document.write(`O número digitado foi: ${numero} <br>`)
+        //soma = numero + numero
+        //Number(document.write(`A soma deste número a ele mesmo é igual a ${soma} <br>`))
+       //multiplica = 4 * soma
+    //document.write (`A multiplicação deste novo valor por 4 é igual a ${multiplica} <br>`)
+    //dividir = multiplica / 8
+    //document.write (`A divisão deste resultado por 8 é igual a ${dividir}`)
+    </script>
+</body>
+
+</html>
