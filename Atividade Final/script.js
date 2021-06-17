@@ -5,3 +5,31 @@ function dt_txt(){
 
     document.write(dsem[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de " + data.getFullYear());
     }
+
+    //início do slide de fotos
+    function iniciarslide (){
+    
+        min = 1;
+        fi = min;
+        max = 5;
+        carregarfoto("img1.png");
+    }
+
+    function carregarfoto (foto){
+        document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+    }
+
+    function prox (){
+        fi++;
+        if(fi>max)
+        {fi=min;}
+
+        carregarfoto("img"+fi+".png");
+    }
+
+    function ant (){
+        fi--;
+        if(fi<min){fi=min;}
+        carregarfoto("img"+fi+".png");
+    }
+    //fim do slide de fotos
