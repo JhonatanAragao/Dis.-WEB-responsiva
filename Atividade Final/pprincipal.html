@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games XLife</title>
     <link rel="stylesheet" href="Css/bootstrap.css">
+    <script language=javascript type="text/javascript">
+      dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+      monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+      now = new Date
+    </script>
       
 </head>
 
@@ -88,7 +93,7 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-12">
-                <h1 id="produtos">Jogos em Destaque</h1><br>
+                <h1 id="produtos">Jogos em Destaque<normal><script>document.write ("<h1> hoje " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </h1>")</script></normal></h1><br>
               </div>
               <div class="col"></div>
             </div>
@@ -131,6 +136,10 @@
           </div>
         </section><br>
 
+        <script>
+           function dt_txt();
+        </script>
+
         <!--Rodapé-->
         <footer>
           <div class="container-fluid bg-dark">
@@ -146,5 +155,6 @@
    <script src="Script/jquery-3.3.1.slim.min.js"></script>
    <script src="Script/popper.min.js"></script>
    <script src="Script/bootstrap.min.js"></script>
-</body>
+   
+   </body>
 </html>
